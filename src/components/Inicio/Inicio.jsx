@@ -45,34 +45,3 @@ const Inicio = () => {
 
 export default Inicio
 
-
-
-
-/*import Register from '../Register/Register'
-import {Link} from 'react-router-dom'
-import Logo from '../Logo/Logo'
-import Presentacion from '../Presentación/Presentacion'
-import Login from '../Login/Login'
-import PreInicio from '../PreInicio/PreInicio'
-
-const Inicio = () => {
-    
-    return ( <>
-    
-    <div className='navInicio'>
-        <Logo/>
-    </div>
-   
-    <div className='bodyInicio'>
-    <Presentacion/>    
-    <Login/>
-    </div>
-
-    
-        <PreInicio/>
-    
-    </> );
-}
- 
-export default Inicio;*/
-//<Link to='/login' className='btns-links'>YA ESTOY REGISTRADA!</Link>

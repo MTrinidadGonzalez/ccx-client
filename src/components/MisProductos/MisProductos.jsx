@@ -61,6 +61,7 @@ useEffect(() => {
 
   return ( <>
     <NavBarsContainer/>
+    <div className='generalContainers'>
     <div className='cardsContainer'>
     {userProducts ? (
       userProducts.map((p) => (
@@ -89,6 +90,8 @@ useEffect(() => {
       <h2>No hay productos de este usuario por el momento</h2>
     )}
     </div>
+    </div>
+    
     </> );
  
 }

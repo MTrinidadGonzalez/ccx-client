@@ -22,7 +22,7 @@ const Users = () => {
   return (
     <>
       <NavBarsContainer />
-      <div className='constainersGenerale'>
+      <div className='generalContainers'>
       <div className='containerSelects'>
         <p>Buscar usuarios por zona:</p>
         <select onChange={(e) => setSelectedZone(e.target.value)} className='selects'>

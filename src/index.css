@@ -14,9 +14,8 @@ body{
  line-height:2 ;
  font-size: larger;
  font-weight: bolder;
- 
- color: rgb(16,26,17);
- background-color: rgb(16,26,27) ;
+/*background-color: rgb(251,247,239);*/
+color: rgb(20,31,83);
 }
 
 
@@ -25,47 +24,30 @@ body{
 
 .title{
   text-align: center;
- /* color: rgb(178,169,139);*/
-
+  transition: 0.3s;
   width: 100%;
   height: 100%;
   font-weight: 900;
- /* animation: backGroundLogo 4s linear infinite;*/
- color: transparent;
- background-image: linear-gradient(70deg,  red,rgb(178,169,139), white);
- background-size: 200% 200%;
-  background-clip: text;
-  font-size: xx-large;
- text-shadow: 3px 3px 5px rgba(243, 248, 91, 0.5);
 }
 
 .title:hover{
-  background-image: none;
-  background-color: rgb(178,169,139);
-
+ color: pink;
+ color:rgb(38,146,229);
 }
 .titlePreInicio{
-  color: transparent;
- background-image: linear-gradient(70deg,  red,rgb(178,169,139), white);
- background-size: 200% 200%;
-  background-clip: text;
 font-size: xx-large;
- text-shadow: 3px 3px 5px rgba(243, 248, 91, 0.5);
  width: 100%;
 font-size: 55px;
- 
- 
+
 }
 .titlePreInicioContainer{
-
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100%;
   padding: 50px;
- /* animation-duration: 4s;*/
-  /*transition: all 1s;*/
+  border-radius: 50%;
 }
 
 .divLogo{
@@ -73,19 +55,9 @@ font-size: 55px;
   flex-direction: row;
   justify-content: center;
   align-items: center;
+
 }
-/*
-@keyframes backGroundLogo {
-  0% {
-    background-image: linear-gradient(60deg,red,rgb(178,169,139), white, red);
-  }
-  50% {
-    background-image: linear-gradient(40deg, red,rgb(178,169,139), white);
-  }
-  100% {
-    background-image: linear-gradient(30deg,rgb(178,169,139), red, white);
-  }
-}*/
+
 .navInicio{
   display: flex;
   flex-direction: row;
@@ -114,17 +86,17 @@ font-size: 55px;
   justify-content: center;
   align-items: center;
   width: 100%;
-
-  
+  overflow: hidden;
 }
 
 .navGeneral{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  justify-content: center;
   align-items: center;
   width: 100%;
- background-color: rgb(16,26,27) ;
+  background-color: rgb(20,31,83);
   }
 
 .itemsNavGral{
@@ -136,17 +108,10 @@ font-size: 55px;
   background-color: transparent;
   display: block;
 transition: 0.3s;
+
 }
 .itemsNavGral:hover{
-/*
-color: rgb(208,219,208);*/
-color: rgb(178,169,139);
-
-color: transparent;
-background-image: linear-gradient(70deg,  red,rgb(178,169,139), white);
-/*text-shadow: 2px 2px 3px rgba(243, 248, 91, 0.5);*/
-background-size: 200% 200%;
- background-clip: text;
+color:rgb(38,146,229);
 }
 
 /************generales***********/
@@ -157,24 +122,13 @@ background-size: 200% 200%;
   margin-top: 5px;
   padding: 10px;
   font-weight:500 ;
-
-  color: rgb(208,219,208);
   font-weight:800;
-  
 }
 
 .btns-links:hover{
 
- color: rgb(178,169,139);
-
+  color:rgb(38,146,229);
 }
-/*
-.miniDivDisplayCenter{
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}*/
 
 .btnConIcon{
   display: flex;
@@ -186,77 +140,72 @@ background-size: 200% 200%;
   width: 100%;
 }
 
-
 ion-icon{
-  font-size: 25px;
+  /*font-size: 25px;*/
   padding: 2px;
-  height: 50px;
-  width: 50px;
-color: rgb(178,169,139);
-
+  height: 30px;
+  width: 30px;
 }
 
-
 .btns{
-  color: white;
-  border-radius: 6px;
-  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 95%;
   text-decoration: none;
   margin-top: 5px;
-  padding: 10px;
+  margin-bottom: 5px;
+  padding: 7px;
+  height: 35px;
   font-weight:500 ;
-  background-color: rgb(201,0,0);
-  border: none;
-  color: rgb(16,26,17);
   font-size: medium;
-  font-weight:800;
   transition: 0.5s;
+  border-radius: 6px;
+  color: white;
+  border: 1px solid rgb(38, 146,229 );
+  background-color: rgb(16,117,197);
 }
 
 .btns:hover{
-  background-image: none;
-  background-color: transparent;
- /* color: rgb(208,219,208) ;*/
-  color: white;
-  border: 1px solid  rgb(201,0,0);
- /* box-shadow: 1px 1px 1px 1px rgba(243, 248, 91, 0.5);*/
- 
+ background-color: rgb(38,146,229);
+ border: none;
+
 }
 
 .containerSelects{
   display: flex;
-  flex-direction:row;
+  flex-direction:column;
   margin: auto;
   justify-content: center;
   align-items: center;
  /* margin-top: 30px;*/
  width: 90%;
- border-bottom:1px solid rgb(16,26,17);
+ border: 1px solid  pink;
+
 }
 .containerSelectsForms{
   width: 100%;
-  
 }
 .containerSelectsForms input{
   width: 100%;
   height: 20px;
-  color: black;
+  
 }
 .selects{
-  color:rgb(16,26,17) ;
- background-color: rgb(208,219,208);
   padding: 5px;
-  margin-top: 40px;
+  margin-top: 3px;
+  margin-bottom: 3px;
   text-transform: uppercase;
-  border-radius: 3px;
+  border-radius: 20px;
   width: 100%;
-  border-top: 1px solid rgb(201,0,0);
-  border-bottom: 1px solid  rgb(201,0,0) ;
- 
+  border: 1px solid rgb(19,39,119);
+ background-color: rgba(0, 0, 0, 0.016);
+ color: rgb(19,39,119);
 }
 .selects:hover{
- /* background-color: rgb(187,121,135);*/
- background-color: rgb(178,169,139);
+ color: rgb(16,117,197);
 }
 
 .forms{
@@ -268,12 +217,9 @@ color: rgb(178,169,139);
   padding: 20px;
   margin: 20px;
   width: 90%;
-background-color: transparent ;
-color: rgb(208,219,208) ;
-border: 2px solid rgb(208,219,208);
-box-shadow:20px 20px 20px rgba(0,0,0,0.5);
-
   border-radius: 9px;
+border: 1px solid pink;
+ 
 }
 
 .forms .inputs{
@@ -281,10 +227,6 @@ box-shadow:20px 20px 20px rgba(0,0,0,0.5);
   margin: 7px;
   padding: 7px;
   font-size: medium;
-  background-color: rgba(0,0,0,0.5) ;
-  color: white;
-  border: 1px solid black;
-  border-radius: 6px;
 }
 
 .forms .btns-links{
@@ -292,13 +234,12 @@ box-shadow:20px 20px 20px rgba(0,0,0,0.5);
   margin: 7px;
   padding: 7px;
   font-size: medium;
- /* color:  rgb(16,26,27);*/
-  color: white;
   transition: 0.3s;
 }
 .forms .btns-links:hover{
-color: rgb(201,0,0);
+  color: pink;
 }
+
 
 .containerBodyRegister{
   width: 60%;
@@ -311,11 +252,9 @@ color: rgb(201,0,0);
   justify-content: center;
   align-items: center;
   text-align: center;
-  border: 1px solid rgb(147, 0, 24);
   margin-top: 5px;
 }
-
-.constainersGenerale{
+.generalContainers{
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -325,6 +264,7 @@ color: rgb(201,0,0);
   margin-top: 200px;
 }
 
+
 .divContainerForms{
   display: flex;
   flex-direction: column;
@@ -333,7 +273,6 @@ color: rgb(201,0,0);
   text-align: center;
   padding: 20px;
   margin: 10px;
- /* color: rgb(110,44,64);*/
 
 }
 
@@ -341,6 +280,7 @@ color: rgb(201,0,0);
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   margin-top: 20px;
+  align-items: flex-start;
 }
 .productsCard{
   display: flex;
@@ -350,15 +290,13 @@ color: rgb(201,0,0);
   text-align: center;
   padding: 10px;
   margin: 10px;
-  line-height:1;
-  overflow: hidden;
+ /* line-height:1;
+  overflow: hidden;*/
   border-radius: 6px;
   background-color: transparent ;
-  color: rgb(208,219,208) ;
- /* border: 2px solid rgb(208,219,208);*/
- border: 1px solid  rgb(201,0,0);
-  box-shadow:20px 20px 20px rgba(0,0,0,0.5);
-    border-radius: 9px;
+ border:0.5px solid rgb(19,39,119);
+ /*box-shadow: 2px 2px 2px 2px rgb(19,39,119);*/
+
 }
 .productsCard p{
   width: 100%;
@@ -374,8 +312,8 @@ color: rgb(201,0,0);
 }
 .productsImgCard:hover{
   transform: scale(1.2);
-}
 
+}
 
 .cards{
   display: flex;
@@ -383,23 +321,34 @@ color: rgb(201,0,0);
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 10px;
+  padding: 5px;
   margin: 15px;
   line-height:1;
-  background-color: rgb(16,26,27) ;
-  border-radius: 6px;
-  color: rgb(178,169,139);
- /* border:1px solid rgb(178,169,139);*/
- border: 1px solid  rgb(201,0,0);
-  box-shadow: 20px 20px 20px rgba(0,0,0,0.1);
- 
+  overflow: hidden;
+  border:1px solid pink;
+}
+.cards:hover{
+  color: black;
+
+}
+.divImgCards{
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
 }
 
 .cardsImg{
-  width: 250px;
-  border-radius: 45%;
+  width: 100%;
+  border-radius: 6px;
 }
-
+.bodyCards{
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items: center;
+  width: 100%;
+  font-size: small;
+}
 
 .bodyInicio{
   display: grid;
@@ -414,8 +363,7 @@ color: rgb(201,0,0);
 }
 .presentacionContainer p{
   margin: 10px;
-  text-align: center;
-  color: rgb(178,169,139);
+  
 }
 
 
@@ -437,23 +385,26 @@ color: rgb(201,0,0);
 
 .btnGetUserChats{
   font-size: larger;
+  color:rgb(20,31,83);
 }
-
+.btnGetUserChats:hover{
+  color:rgb(38,146,229);
+}
 .chatsListContainer{
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
   width: 100%;
-
-background-color: rgb(201,0,0);
-  color: rgb(208,219,208);
-  position: absolute;
   position: relative;
   top: 100%; 
   left: 0;
   z-index: 1; 
- 
+ /*background-color: black;
+ color: white;*/
+ background-color: white;
+ color: black;
+
 }
 
 .userChatsList{
@@ -465,35 +416,40 @@ background-color: rgb(201,0,0);
  /*position: absolute;*/
  z-index: 1; 
  width: 100%;
- /* background-color: rgb(172,71,92);*/
-  background-color: rgb(178,169,139);
- 
+ color: rgb(20,31,83);
+}
+.userChatsList:hover{
+  color: rgb(16,117,197);
 }
 
 .linksChats{
  display: flex;
  flex-direction: row;
  justify-content: center;
+ justify-content: flex-start;
  align-items: center;
  width: 100%;
- color:rgb(16,26,17) ;
-/* border-top: 1px solid rgb(16,26,17);
- border-bottom: 1px solid rgb(16,26,17) ;*/
- border-top: 1px solid rgb(201,0,0);
- border-bottom: 1px solid  rgb(201,0,0) ;
- color: rgb(201,0,0);
- transition: 1s;
+ transition: 0.3s;
+ margin-left: 40px;
+ color: rgb(20,31,83);
 }
+.linksChatsImgContainer{
+  width: 35px;
+  height: 35px;
+  margin-right:9px;
+  overflow: hidden;
+  border-radius: 20px;
+}
+
 .linksChats img{
-  width: 5%;
-  border-radius: 40%;
+  width: 100%;
+/*  border-radius: 40%;*/
   margin-right: 2px;
 }
+/*
 .linksChats:hover{
   border: none;
-  background-color: rgb(208,219,208);
-  color:rgb(16,26,17) ;
-}
+}*/
 
 .displayNoneChat{
   display: none;
@@ -506,10 +462,27 @@ background-color: rgb(201,0,0);
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
   margin-top: 250px;
-  color: rgb(178,169,139);
-background-color: rgb(16,26,27) ;
+  width: 100%;
+  /*background-color:  rgba(243, 58, 166, 0.423);*/
+  border: 1px solid  rgba(243, 58, 166, 0.423);
+  border-radius: 6px;
+  padding: 10px;
+}
+.chatContentContainerChild{
 width: 100%;
+margin: auto;
+}
+.chatContentContainerChild input{
+  width: 95%;
+  min-height: 30px;
+  margin: auto;
+}
+.cargando{
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
 }
 
 .opositOwnerChatContent{
@@ -517,30 +490,35 @@ display: flex;
 flex-direction: row;
 align-items: center;
 justify-content: center;
-/*background-color: rgb(172,71,92);*/
 width: 100%;
-padding: 5px;
-border-top: 1px solid  rgb(178,169,139);
-border-bottom: 1px solid  rgb(178,169,139);
+background-color: rgb(20,31,83);
+color: white;
+border-radius: 6px;
 }
-.opositOwnerChatContent img{
-  width: 5%;
+.opositOwnerChatContent p{
+  margin-right: 10px;
+}
+.opositOwnerContainerImg{
+  height: 50px;
+  width:50px;
+  overflow: hidden;
+  margin-right: 10px;
   border-radius: 40%;
-  margin-right: 7px;
+}
+.opositOwnerContainerImg img{
+width: 100%;
+
 }
 
 .messagesContent{
- /* background-color: rgb(172,71,92);*/
-width: 100%;
+width: 95%;
 margin-top: 20px;
-padding: 10px;
-/*border: 1px solid  rgb(172,71,92);*/
+padding: 5px;
 border-radius: 6px;
 position: relative;
 margin-bottom: 20px;
-
-color: rgb(16,26,27);
-background-color: rgb(208,219,208) ;
+border-bottom: 1px solid rgb(20,31,83);
+border-top: 1px solid  rgb(20,31,83);
 }
 /***********delete and send message***/
 .btnDeleteMessage{ 
@@ -554,8 +532,7 @@ background-color: rgb(208,219,208) ;
 width: 24px;
 height: 24px;
 font-size: larger;
- border: 1px solid  rgb(16,26,27);
- color:  rgb(16,26,27);
+
 }
 .btnDeleteMessage:hover::before {
   content: "Eliminar mensaje";
@@ -570,15 +547,16 @@ font-size: larger;
   white-space: nowrap;
   font-size: small;
 }
-
+/*
 .formSendMessage{
   width: 100%;
-}
+}*/
+/*
 .formSendMessageInput{
-  width: 100%;
+  width: 95%;
   height: 50px;
   
-}
+}*/
 
 
 
@@ -604,35 +582,25 @@ font-size: larger;
     width: 100%;
   }
 
-  
 .navGeneral{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  /*background-color: rgb(110,44,64);*/
-  color: rgb(178,169,139);
-  background-color: rgb(16,26,27) ;
+
   }
   .itemsNavGral{
-  /*  color: white;*/
- 
     border: none;
-    /*margin: 5px;*/
     padding: 5px;
     text-decoration: none;
     background-color: transparent;
     width: 95%;
-    border:1px solid  rgb(178,169,139) ;
   }
   .itemsNavGral:hover{
- /* color: rgb(187,121,135);*/
-  color: rgb(16,26,27);
-  background-color:  rgb(208,219,208);
+    color: black;
+    color: rgb(38,146,229);
   }
-
- 
 
 .hamburguerMenuDiv{
   width: 100%;
@@ -641,9 +609,8 @@ font-size: larger;
   align-items: flex-end;
   justify-content: flex-end;
   display: block;
-  color: rgb(178,169,139);
-  background-color: rgb(16,26,27) ;
-  border-bottom: 1px solid rgb(178,169,139);
+background-color: rgb(20,31,83);
+color: white;
 }
 
 .containerBodyRegister{
@@ -658,20 +625,16 @@ font-size: larger;
   margin: 10px;
   justify-content: center;
   align-items: center;
- /* margin-top: 30px;*/
- width: 90%;
- border-bottom:1px solid  rgb(16,26,27) ;
+
 }
 
 .selects{
-/*  background-color: rgb(172,71,92);
-  color: white;*/
- /* margin: 5px;*/
   padding: 5px;
   margin-top: 10px;
   text-transform: uppercase;
   border-radius: 3px;
   width: 90%;
+
 }
 
   .loginForm{
@@ -690,7 +653,6 @@ font-size: larger;
     width: 100%;
   }
 
-
   .constainersGenerale{
     margin-top: 150px;
   }
@@ -703,7 +665,6 @@ font-size: larger;
 
 .showChatBtn{
   width: 100%;
-  background-color: white;
   border: 1px solid;
 }
 }

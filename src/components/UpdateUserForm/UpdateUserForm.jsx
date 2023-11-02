@@ -41,7 +41,7 @@ const UpdateUserForm = () => {
 
     return ( <>
     < NavBarsContainer/>
-    <div className='constainersGenerale'>
+    <div className='generalContainers'>
 
     <div className='divContainerForms'>
     <form onSubmit={handleSubmit(onSubmit)} className='forms'>

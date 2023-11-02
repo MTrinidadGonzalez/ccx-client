@@ -46,11 +46,13 @@ function ChatContent() {
         {chat ? (
           <>
             <div className='opositOwnerChatContent'>
+              <div className='opositOwnerContainerImg'>
               <img src={chat.opositOwner.imgProfile} alt="" />
+              </div>
               <p>{chat.opositOwner.first_name} </p>
               <p>{chat.opositOwner.last_name} </p>
             </div>
-            <div>
+            <div className='chatContentContainerChild'>
               {chat.messages.map((message, index) => (
                 <p key={index} className='messagesContent'>
                   {message.content}
@@ -61,7 +63,7 @@ function ChatContent() {
             <SendMessageChat chatId={chat.id} />
           </>
         ) : (
-          <h2>Cargando...</h2>
+          <h2 className='cargando'>Cargando...</h2>
         )}
       </div>
     </>

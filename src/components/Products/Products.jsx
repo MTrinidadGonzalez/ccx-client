@@ -48,12 +48,14 @@ const Products = () => {
   return (
     <>
       <NavBarsContainer />
-      <div className='constainersGenerale'>
+      <div className='generalContainers'>
         <div className='containerSelects'>
           <select onChange={(e) => setSelectedCategory(e.target.value)} className='selects'>
             <option value="">Todas las categorías</option>
             <option value="articulos de belleza">Artículos de belleza</option>
             <option value="articulos para el hogar">Artículos para el hogar</option>
+            <option value="tecnologia">Tecnología</option>
+            <option value="gimnasia">Gimnasia</option>
             <option value="remeras">Remeras</option>
             <option value="pantalones">Pantalones</option>
             <option value="abrigos">Abrigos</option>

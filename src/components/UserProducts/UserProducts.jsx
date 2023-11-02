@@ -17,7 +17,7 @@ const UserProducts = () => {
     return (
         <>
             <NavBarsContainer />
-            <div className='constainersGenerale'>
+            <div className='generalContainers'>
                 <div className='cardsContainer'>
                     {userProducts.length > 0 ? (
                         userProducts.map((p) => (

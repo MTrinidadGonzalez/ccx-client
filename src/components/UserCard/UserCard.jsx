@@ -13,16 +13,20 @@ const UserCard = ({id, first_name, last_name, alias, email, zona, role, img }) =
   return (
     <>
       <div className="cards" key={id}>
+        <div className='divImgCards'>
         <img src={img} alt="Imagen perfil de usuario" className="cardsImg" loading='lazy' />
+        </div>
         <button onClick={toggleUpdateProfileImg} className='btns'>
           Cambiar imagen de perfil
         </button>
         {showUpdateProfileImg && <UpdateProfileImg />}
+        <div className='bodyCards'>
         <h1>Nombre:{first_name} {last_name}</h1>
         <h2>Alias: {alias} </h2>
         <p>Correo: {email} </p>
         <p>Zona: {zona}</p>
-        <p>Rol: {role} </p>
+        </div>
+      
         <div  className='btnConIcon'>
         <Link to='/updateuser' className='btns'>Modificar datos</Link>
         <ion-icon name="create-outline"></ion-icon>

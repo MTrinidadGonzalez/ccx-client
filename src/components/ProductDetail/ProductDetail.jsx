@@ -25,7 +25,7 @@ const ProductDetail = () => {
 
     return ( <>
     <NavBarsContainer/>
-    <div className="constainersGenerale">
+    <div className="generalContainers">
         <ProductCard id={product._id} 
         category={product.category}
         img={product.img} 

@@ -45,9 +45,10 @@ const CreateProductForm = () => {
 
   return ( <>
   <NavBarsContainer/>
-  <div className='constainersGenerale'>
+  <div className='generalContainers'>
   <div className='divContainerForms'>
   <form  onSubmit={handleSubmit(onSubmit)} className='forms' encType="multipart/form-data">
+     <h2>Publicar producto</h2>
       <div className='containerSelectsForms' >
       <input type="text" placeholder="Título"  required={true} {...register("title")}/>
         <input type="text" placeholder="Descripcón" required={true} {...register("description")}/>
@@ -59,6 +60,8 @@ const CreateProductForm = () => {
         <select {...register('category')} className='selects'>
         <option value='articulos de belleza' >Artículos de belleza</option>
           <option value='articulos para el hogar'>Artículos del hogar</option>
+          <option value='gimnasia'>Gimnasia</option>
+          <option value='tecnologia'>Tecnología</option>
           <option value='pantalones'>Pantalones</option>
           <option value='remeras'>Remeras</option>
           <option value='abrigos'>Abrigos</option>

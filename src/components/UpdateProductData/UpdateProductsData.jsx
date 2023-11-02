@@ -57,7 +57,7 @@ const UpdateProductData = () => {
 
     return ( <>
     <NavBarsContainer/>
-  <div className='constainersGenerale'>
+  <div className='generalContainers'>
   <div className='divContainerForms'>
   <form  onSubmit={handleSubmit(onSubmit)} className='forms' encType="multipart/form-data">
       <img src={product.img} alt={product.description} className='cardsImg'/>

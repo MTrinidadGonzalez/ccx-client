@@ -27,25 +27,3 @@ const NavBarsContainer = () => {
 
 export default NavBarsContainer;
 
-/*
-const NavBarsContainer = () => {
-    const [showNav, setShowNav] = useState(false);
-  
-    const toggleNav = () => {
-      setShowNav(!showNav);
-    };
-  
-    return (
-      <>
-        <div className="navBarsContainer ">
-          <HamburguerMenuIcon toggleNav={toggleNav} />
-          <div className={`containerResponsivesMenus ${showNav ? 'displayBlock' : 'displayNone'}`}>
-            <NavBar />
-            <UserNav />
-          </div>
-        </div>
-      </>
-    );
-  };
-  
-  export default NavBarsContainer;*/

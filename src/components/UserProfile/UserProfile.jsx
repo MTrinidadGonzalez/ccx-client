@@ -36,7 +36,7 @@ const UserProfile = () => {
 
     return ( <>
     <NavBarsContainer/>
-    <div className='constainersGenerale'>
+    <div className='generalContainers'>
     
    <UserCard id={user._id} first_name={user.first_name} 
     last_name={user.last_name} alias={user.alias} email={user.email} zona={user.zona} role={user.role} img={user.img} />
