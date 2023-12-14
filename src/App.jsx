@@ -25,7 +25,9 @@ import ProductDetail from './components/ProductDetail/ProductDetail'
 import Register from './components/Register/Register'
 /*import UserChats from './components/UserChats/UserChats'*/
 import ChatContent from './components/ChatContent/ChatContent'
+import io from 'socket.io-client'
 
+const socket= io('https://ccx-server.onrender.com/') 
 
 function App() {
 
@@ -34,9 +36,9 @@ function App() {
     
     <BrowserRouter>
     <AuthTokenProvider>
-    <UserProvider>
-    <ProductsProvider>
-    <UsersProvider>
+    <UserProvider socket={socket}>
+    <ProductsProvider socket={socket}>
+    <UsersProvider socket={socket} >
   
     <Routes>
     <Route path='/navbar' exact element={ <NavBar/> } />
@@ -59,7 +61,7 @@ function App() {
     <Route path='/productDetail/:pid' exact element={<ProductDetail/>} />
   
    
-    <Route path='/chat/:chatID' exact element={<ChatContent/>} />
+    <Route path='/chat/:chatID' exact element={<ChatContent   socket={socket}/>} />
 
     </Routes>
    
