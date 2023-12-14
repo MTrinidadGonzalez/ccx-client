@@ -27,7 +27,7 @@ import Register from './components/Register/Register'
 import ChatContent from './components/ChatContent/ChatContent'
 import io from 'socket.io-client'
 
-const socket= io('https://ccx-server.onrender.com/') 
+const socket= io('https://ccx-server.onrender.com') 
 
 function App() {
 
