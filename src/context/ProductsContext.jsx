@@ -1,9 +1,7 @@
 import ProductsService from '../services/products.service'
 import { createContext } from 'react'
 import { useState,useEffect } from 'react'
-//import io from 'socket.io-client'
 
-//const socket= io('https://ccx-server.onrender.com/') 
 
 export const ProductsContext=createContext({})
 export const ProductsProvider= ({children,socket}) => {

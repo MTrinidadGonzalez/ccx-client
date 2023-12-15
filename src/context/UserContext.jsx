@@ -2,9 +2,7 @@ import UserService from '../services/user.service'
 import { createContext } from 'react'
 import { useState, useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
-//import io from 'socket.io-client'
 
-//const socket= io('http://localhost:8081') 
 export const UserContext = createContext({});
 
 export const UserProvider = ({ children,socket }) => {

@@ -4,11 +4,9 @@ import SendMessageChat from '../SendMessageChat/SendMessageChat';
 import { useParams } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 import ChatService from '../../services/chat.service';
-//import io from 'socket.io-client';
 
-//const socket = io('http://localhost:8081');
 
-function ChatContent({ socket}) {
+function ChatContent({socket}) {
   const { chatID } = useParams();
   const [chat, setChat] = useState(null);
 

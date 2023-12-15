@@ -1,9 +1,7 @@
 import  UserService from '../services/user.service'
 import { createContext } from 'react'
 import { useState,useEffect } from 'react'
-//import io from 'socket.io-client'
 
-//const socket= io('http://localhost:8081') 
 
 export const UsersContext=createContext({})
 export const UsersProvider= ({children,socket}) => {

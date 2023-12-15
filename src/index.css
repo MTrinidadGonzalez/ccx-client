@@ -6,6 +6,8 @@ body{
   justify-content: center;
   align-items: center;
   text-align: center;
+
+  width: 100%;
   font-family: 'Asap Condensed', sans-serif;
   font-family: 'Raleway', sans-serif;
  /* font-family: 'Sofia Sans', sans-serif;*/
@@ -14,8 +16,6 @@ body{
  font-weight: bolder;
 /*background-color: rgb(251,247,239);*/
 color: rgb(20,31,83);
-width: 100%;
-overflow-x: hidden;
 }
 
 
