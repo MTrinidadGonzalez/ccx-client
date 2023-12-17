@@ -1,12 +1,8 @@
 body{
-  margin: 0%;
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   text-align: center;
-
   width: 100%;
   font-family: 'Asap Condensed', sans-serif;
   font-family: 'Raleway', sans-serif;
@@ -15,12 +11,17 @@ body{
  font-size: larger;
  font-weight: bolder;
 /*background-color: rgb(251,247,239);*/
-color: rgb(20,31,83);
+color: rgb(13,16,17);
 }
 
 
 /************inicio**********/
-
+input{
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px solid black;
+}
 
 .title{
   text-align: center;
@@ -28,16 +29,17 @@ color: rgb(20,31,83);
   width: 100%;
   height: 100%;
   font-weight: 900;
+  color: rgb(211,235,20);
 }
 
 .title:hover{
- color: pink;
- color:rgb(38,146,229);
+ color:rgb(211,235,20);
 }
 .titlePreInicio{
 font-size: xx-large;
  width: 100%;
 font-size: 55px;
+color: rgb(13,16,117);
 
 }
 .titlePreInicioContainer{
@@ -49,7 +51,12 @@ font-size: 55px;
   padding: 50px;
   border-radius: 50%;
 }
-
+.presentacionContainer{
+  color: rgb(13,16,117);
+}
+.bodyInicio{
+  background-color: rgb(55,139,101);
+}
 .divLogo{
   display: flex;
   flex-direction: row;
@@ -66,13 +73,22 @@ font-size: 55px;
   width: 100%;
 }
 
+.presentacionContainer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
 
+}
+.presentacionContainer p{
+  margin: 10px;
+  color: rgb(13,16,117);
+  color: white;
+}
 .imgInicio{
   width: 100%;
   height: 900px;
 }
-
-
 
 /**********NavBar***********/
 
@@ -96,7 +112,7 @@ font-size: 55px;
   justify-content: center;
   align-items: center;
   width: 100%;
-  background-color: rgb(20,31,83);
+  background-color: rgb(13,16,117);
   }
 
 .itemsNavGral{
@@ -110,7 +126,7 @@ font-size: 55px;
   transition: 0.3s;
 }
 .itemsNavGral:hover{
-color:rgb(38,146,229);
+color:rgb(211,235,20);
 }
 
 /************generales***********/
@@ -125,8 +141,7 @@ color:rgb(38,146,229);
 }
 
 .btns-links:hover{
-
-  color:rgb(38,146,229);
+  color:rgb(16,216,157);
 }
 
 .btnConIcon{
@@ -152,25 +167,21 @@ ion-icon{
   justify-content: center;
   align-items: center;
   text-align: center;
-  width: 95%;
+  width: 90%;
   text-decoration: none;
   margin-top: 5px;
   margin-bottom: 5px;
   padding: 7px;
   height: 35px;
-  font-weight:500 ;
-  font-size: medium;
   transition: 0.5s;
   border-radius: 6px;
   color: white;
-  border: 1px solid rgb(38, 146,229 );
-  background-color: rgb(16,117,197);
+  border: 1px solid rgb(211,235,20 );
+  background-color: rgb(16,216,157);
 }
 
 .btns:hover{
- background-color: rgb(38,146,229);
- border: none;
-
+ background-color: rgb(55,139,101);
 }
 
 .containerSelects{
@@ -179,9 +190,14 @@ ion-icon{
   margin: auto;
   justify-content: center;
   align-items: center;
-  /* margin-top: 30px;*/
-  width: 90%;
-  border: 1px solid  pink;
+  margin-top: 30px;
+  border: 1px solid rgb(211,235,20 );
+}
+.sub-div-container-serlect{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 10px;
 }
 .containerSelectsForms{
   width: 100%;
@@ -189,7 +205,6 @@ ion-icon{
 .containerSelectsForms input{
   width: 100%;
   height: 20px;
-  
 }
 .selects{
   padding: 5px;
@@ -198,9 +213,8 @@ ion-icon{
   text-transform: uppercase;
   border-radius: 20px;
   width: 100%;
-  border: 1px solid rgb(19,39,119);
- background-color: rgba(0, 0, 0, 0.016);
- color: rgb(19,39,119);
+  border: 1px solid rgb(211,235,20 );
+  color: rgb(13,16,117);
 }
 .selects:hover{
  color: rgb(16,117,197);
@@ -216,7 +230,7 @@ ion-icon{
   margin: 20px;
   width: 90%;
   border-radius: 9px;
-border: 1px solid pink;
+  border: 1px solid rgb(211,235,20 );
  
 }
 
@@ -292,9 +306,8 @@ border: 1px solid pink;
   overflow: hidden;*/
   border-radius: 6px;
   background-color: transparent ;
- border:0.5px solid rgb(19,39,119);
- /*box-shadow: 2px 2px 2px 2px rgb(19,39,119);*/
-
+  border: 1px solid rgb(211,235,20 );
+  color: rgb(13,16,117);
 }
 .productsCard p{
   width: 100%;
@@ -323,7 +336,8 @@ border: 1px solid pink;
   margin: 15px;
   line-height:1;
   overflow: hidden;
-  border:1px solid pink;
+  border: 1px solid rgb(211,235,20 );
+  color: rgb(13,16,117);
 }
 .cards:hover{
   color: black;
@@ -352,19 +366,6 @@ border: 1px solid pink;
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
-.presentacionContainer{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 20px;
-
-}
-.presentacionContainer p{
-  margin: 10px;
-  
-}
-
-
 .hamburguerMenuDiv{
   width: 100%;
   display: flex;
@@ -378,6 +379,56 @@ border: 1px solid pink;
   width: 100%;
   display: block;
 }
+
+
+  /***********************sliders cards**************/
+  .slider-container-users-cards {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    margin-top: 10px;
+  }
+  .slider-cards{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .slider-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    margin: 10px;
+    width: 100%;
+    border-radius: 3px;
+    border: 1px solid rgb(211,235,20 );
+    color: rgb(13,16,117);
+  }
+  .slider-cards *{
+    width: 90%;
+    margin: 5px;
+    font-size: 18px;
+    text-align: center;
+  }
+  .slider-card-container-img{
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+  }
+  .slider-card-container-img img{
+   width: 100%;
+  }
+  
+  /***********selects*****/
+  .containerSelects{
+    width: 90%;
+    margin:200px auto auto auto;
+
+  }
 
 /****************section chat************/
 
@@ -463,8 +514,8 @@ border: 1px solid pink;
   text-align: center;
   margin-top: 250px;
   width: 100%;
-  /*background-color:  rgba(243, 58, 166, 0.423);*/
-  border: 1px solid  rgba(243, 58, 166, 0.423);
+  border: 1px solid rgb(211,235,20 );
+  color: rgb(13,16,117);
   border-radius: 6px;
   padding: 10px;
 }
@@ -564,8 +615,7 @@ font-size: larger;
     margin-top: 180px;
   }
   .displayNone{
-    display: none;
-   
+    display: none; 
   }
   .displayBlock{
     display: block;
@@ -596,8 +646,7 @@ font-size: larger;
     width: 95%;
   }
   .itemsNavGral:hover{
-    color: black;
-    color: rgb(38,146,229);
+    color: rgb(211,235,20);
   }
 
 .hamburguerMenuDiv{
@@ -622,16 +671,23 @@ color: white;
   margin: auto;
   justify-content: center;
   align-items: center;
-  /* margin-top: 30px;*/
+  margin-top: 25px;
   width: 90%;
-} 
+  border: 1px solid rgb(211,235,20 );
+  color: rgb(13,16,117);
+}
+.sub-div-container-serlect{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 10px;
+}
 .selects{
   padding: 5px;
   margin-top: 10px;
   text-transform: uppercase;
   border-radius: 3px;
   width: 90%;
-
 }
 
   .loginForm{
@@ -664,29 +720,62 @@ color: white;
   width: 100%;
   border: 1px solid;
 }
-}
 
-@media screen and (max-width:900px){
-  .cardsContainer{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
-
-}
-@media screen and (max-width:500px){
-  .cardsContainer{
-    display: grid;
-    grid-template-columns: 1fr;
-  }
-
-  .containerSelects{
+  /***********************sliders cards**************/
+  .slider-container-users-cards {
+    max-width: 700px;
+    width: 100%;
     display: flex;
-    flex-direction:column;
-    margin: auto;
-    justify-content: center;
     align-items: center;
-    /* margin-top: 30px;*/
-    width: 90%;
-    border: 1px solid  pink;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    margin: auto;
+    overflow-x: hidden;
   }
+  .slider-cards{
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+  }
+  
+  .slider-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    min-width: 320px;
+    width: 100%;
+    cursor: pointer;
+    scroll-snap-align: center;
+    border-radius: 3px;
+    border: 1px solid rgb(211,235,20 );
+    color: rgb(13,16,117);
+  }
+  .slider-cards *{
+    width: 100%;
+    margin: 5px;
+    font-size: 18px;
+    text-align: center;
+  }
+  .slider-card-container-img{
+    width: 100%;
+    min-width: 320px;
+    height: 300px;
+    overflow: hidden;
+  }
+  .slider-card-container-img img{
+   width: 100%;
+  }
+
 }
+
+
+
+
+
+

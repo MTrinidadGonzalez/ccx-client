@@ -22,30 +22,32 @@ const Users = () => {
   return (
     <>
       <NavBarsContainer />
-      <div className='generalContainers'>
       <div className='containerSelects'>
-        <p>Buscar usuarios por zona:</p>
-        <select onChange={(e) => setSelectedZone(e.target.value)} className='selects'>
+          <div  className='sub-div-container-serlect'>
+          <p>Buscar usuarios por zona:</p>
+          <select onChange={(e) => setSelectedZone(e.target.value)} className='selects'>
           <option value="">Todas las zonas</option>
           <option value="Paseo Rivera Shopping">Paseo Rivera Shopping</option>
           <option value="Shopping Nuevo Centro">Shopping Nuevo Centro</option>
           <option value="Cordoba Shopping">Cordoba Shopping</option>
           <option value="Dinosaurio Mall Ruta20">Dinosaurio Mall Ruta20</option>
           <option value="Patio Olmos">Patio Olmos</option>
-        </select>
-      </div>
-      <div className='containerSelects'>
-       <p>Buscar usuario por alias:</p>
-      <input
+          </select>
+          </div>
+          <div className='sub-div-container-serlect'>
+          <p>Buscar usuario por alias:</p>
+          <input
           type="text"
           className='selects'
           placeholder='Alias del usuario que quieres buscar'
           value={searchAlias}
-          onChange={(e) => setSearchAlias(e.target.value)}
-        />
+          onChange={(e) => setSearchAlias(e.target.value)}/>
+          </div>
       </div>
-      <div className='cardsContainer'>
-        {filteredUsers.map((u) => (
+   
+      <div className='slider-container-users-cards '>
+        <div className='slider-cards'>
+          {filteredUsers.map((u) => (
           <UsersCards
           id={u._id}
           first_name={u.first_name}
@@ -56,8 +58,8 @@ const Users = () => {
           email={u.email}
         />
         ))}
-      </div>
-      </div>
+        </div>
+      </div>  
     </>
   );
 };

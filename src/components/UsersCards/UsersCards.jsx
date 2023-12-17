@@ -2,8 +2,8 @@ import {Link} from 'react-router-dom'
 
 const UsersCards = ({id,first_name,last_name,alias,zona, img, email}) => {
     return ( <>
-     <div className="cards" key={id}>
-        <div className='divImgCards'>
+     <div className="slider-card" key={id}>
+        <div className='slider-card-container-img'>
         <img src={img} alt="Imagen perfil de usuario " className="cardsImg" loading='lazy' />
         </div>
         <div className='bodyCards'>

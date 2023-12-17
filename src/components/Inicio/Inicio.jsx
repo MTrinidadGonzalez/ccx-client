@@ -11,13 +11,10 @@ const Inicio = () => {
   const [mostrarContenidoDespues, setMostrarContenidoDespues] = useState(false);
 
   useEffect(() => {
-    // Configurar un temporizador para cambiar el estado después de 6 segundos
     const timer = setTimeout(() => {
       setMostrarPreInicio(false);
       setMostrarContenidoDespues(true);
     }, 3000);
-
-    // Limpieza del temporizador en caso de que el componente se desmonte antes
     return () => {
       clearTimeout(timer);
     };
@@ -32,9 +29,9 @@ const Inicio = () => {
          <div className='navInicio'>
         <Logo />
         </div>
-          <div className='bodyInicio'>
-          <Presentacion />
-          <Login />
+        <div className='bodyInicio'>
+        <Presentacion />
+        <Login />
         </div>
         </>
       
