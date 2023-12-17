@@ -16,7 +16,6 @@ const Login = () => {
         const userService= new UserService()
         const response=await userService.loginUser(user)
         const result= response.data.status
-        console.log('response login', response.data)
         if(result === 'success'){
          navigate('/home')
          }
