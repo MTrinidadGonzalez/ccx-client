@@ -107,8 +107,7 @@ font-size: 55px;
   text-decoration: none;
   background-color: transparent;
   display: block;
-transition: 0.3s;
-
+  transition: 0.3s;
 }
 .itemsNavGral:hover{
 color:rgb(38,146,229);
@@ -176,14 +175,13 @@ ion-icon{
 
 .containerSelects{
   display: flex;
-  flex-direction:column;
+  flex-direction:row;
   margin: auto;
   justify-content: center;
   align-items: center;
- /* margin-top: 30px;*/
- width: 90%;
- border: 1px solid  pink;
-
+  /* margin-top: 30px;*/
+  width: 90%;
+  border: 1px solid  pink;
 }
 .containerSelectsForms{
   width: 100%;
@@ -561,7 +559,7 @@ font-size: larger;
 
 
 
-@media screen and (max-width:800px) {
+@media screen and (max-width:900px) {
   .constainersGenerale{
     margin-top: 180px;
   }
@@ -618,16 +616,15 @@ color: white;
   margin: 0px;
 }
 
-
 .containerSelects{
   display: flex;
   flex-direction:column;
-  margin: 10px;
+  margin: auto;
   justify-content: center;
   align-items: center;
-
-}
-
+  /* margin-top: 30px;*/
+  width: 90%;
+} 
 .selects{
   padding: 5px;
   margin-top: 10px;
@@ -669,15 +666,27 @@ color: white;
 }
 }
 
-@media screen and (max-width:600px){
+@media screen and (max-width:900px){
   .cardsContainer{
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
+
 }
 @media screen and (max-width:500px){
   .cardsContainer{
     display: grid;
     grid-template-columns: 1fr;
+  }
+
+  .containerSelects{
+    display: flex;
+    flex-direction:column;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    /* margin-top: 30px;*/
+    width: 90%;
+    border: 1px solid  pink;
   }
 }
