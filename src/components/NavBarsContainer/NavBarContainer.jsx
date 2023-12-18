@@ -3,8 +3,6 @@ import  UserChats from '../UserChats/UserChats'
 import HamburguerMenuIcon from '../HamburguerMenuIcon/HamburguerMenuIcon'
 import { useState } from "react";
 
-
-
 const NavBarsContainer = () => {
   const [showNav, setShowNav] = useState(false);
 

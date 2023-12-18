@@ -2,7 +2,7 @@ import UserService from '../services/user.service'
 import { createContext } from 'react'
 import { useState, useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
-
+ 
 export const UserContext = createContext({});
 
 export const UserProvider = ({ children,socket }) => {

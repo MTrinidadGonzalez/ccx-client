@@ -3,12 +3,10 @@ import ChatService from '../../services/chat.service';
 import ChatContent from '../ChatContent/ChatContent';
 import { UsersContext } from '../../context/UsersContext';
 import UserService from '../../services/user.service'
-import io from 'socket.io-client'
 import { Link } from 'react-router-dom';
+import io from 'socket.io-client'
 
-
-const socket= io('http://localhost:8081') 
-
+const socket= io('https://ccx-server.onrender.com') 
 
 const UserChats = () => {
   const [userChats, setUserChats] = useState([]);

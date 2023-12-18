@@ -36,9 +36,9 @@ function App() {
     
     <BrowserRouter>
     <AuthTokenProvider>
-    <UserProvider socket={socket}>
-    <ProductsProvider socket={socket}>
-    <UsersProvider socket={socket} >
+    <UserProvider>
+    <ProductsProvider>
+    <UsersProvider socket={socket}>
   
     <Routes>
     <Route path='/navbar' exact element={ <NavBar/> } />
@@ -59,9 +59,7 @@ function App() {
     <Route path='/misProductos' exact element={<MisProductos/>} />
     <Route path='/updateproduct/:pid' exact element={<UpdateProductData/>} />
     <Route path='/productDetail/:pid' exact element={<ProductDetail/>} />
-  
-   
-    <Route path='/chat/:chatID' exact element={<ChatContent   socket={socket}/>} />
+    <Route path='/chat/:chatID' exact element={<ChatContent socket={socket} />} />
 
     </Routes>
    

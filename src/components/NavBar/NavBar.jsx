@@ -6,7 +6,6 @@ import React, { useContext } from 'react';
 
 const NavBar = () => {
      
-
     return ( <>
     <nav className='navGeneral'>
     <Link to="/home" className='itemsNavGral'>
