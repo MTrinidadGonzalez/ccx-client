@@ -36,8 +36,8 @@ function App() {
     
     <BrowserRouter>
     <AuthTokenProvider>
-    <UserProvider>
-    <ProductsProvider>
+    <UserProvider  socket={socket} >
+    <ProductsProvider  socket={socket} >
     <UsersProvider socket={socket}>
   
     <Routes>

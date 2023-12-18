@@ -11,7 +11,7 @@ body{
  font-size: larger;
  font-weight: bolder;
 /*background-color: rgb(251,247,239);*/
-color: rgb(13,16,17);
+color: rgb(13,16,117);
 }
 
 
@@ -20,7 +20,7 @@ input{
   border-top: none;
   border-left: none;
   border-right: none;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid rgb(13,16,117);
 }
 
 .title{
@@ -36,21 +36,24 @@ input{
  color:rgb(211,235,20);
 }
 .titlePreInicio{
-font-size: xx-large;
- width: 100%;
-font-size: 55px;
-color: rgb(13,16,117);
-
+  font-size: xx-large;
+  width: 100%;
+  font-size: 55px;
+  color:rgb(211,235,20);
+  font-family: 'Sofia Sans', sans-serif;
+  font-family: 'Asap Condensed', sans-serif;
 }
 .titlePreInicioContainer{
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
   width: 100%;
-  padding: 50px;
-  border-radius: 50%;
+  margin: auto;
+  margin-top: 30px;
 }
+
 .presentacionContainer{
   color: rgb(13,16,117);
 }
@@ -611,6 +614,9 @@ font-size: larger;
 
 
 @media screen and (max-width:900px) {
+  body,html{
+    background-color: rgb(55,139,101);
+  }
   .constainersGenerale{
     margin-top: 180px;
   }
