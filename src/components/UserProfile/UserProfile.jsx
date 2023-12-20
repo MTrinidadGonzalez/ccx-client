@@ -4,7 +4,7 @@ import  UserCard from '../UserCard/UserCard'
 import { useState, useEffect } from 'react'
 import  NavBarsContainer from '../NavBarsContainer/NavBarContainer'
 
-const UserProfile = () => {
+const UserProfile = ({socket}) => {
     const [user, setUser] = useState({})
     useEffect(() => {
         const getUser = async () => {
@@ -33,6 +33,20 @@ const UserProfile = () => {
         }
         getUser()
     }, [])
+
+    socket.on('getRealTimeUserProfile',(data) => {
+        const userData = {
+            id: data._id,
+            alias: data.alias,
+            first_name: data.first_name,
+            last_name: data.last_name,
+            email: data.email,
+            img: data.imgProfile,
+            role: data.role,
+            zona: data.zona
+        }
+        setUser({ ...userData })
+      });
 
     return ( <>
     <NavBarsContainer/>

@@ -50,7 +50,7 @@ function App() {
     <Route path='/users' exact element={<Users/>} />
     <Route path='/newPassword' exact element={< NewPAssword/>} />
     <Route path='/restorePassword' exact element={<RestorePassword/>} /> 
-    <Route path='/profile' exact element={< UserProfile/>} />
+    <Route path='/profile' exact element={< UserProfile socket={socket}/>} />
     <Route path='/updateuser' exact element={< UpdateUserForm/>} />
     <Route path='/products' exact element={< Products/>} />
     <Route path='/newProduct' exact element={< CreateProductForm/>} />
