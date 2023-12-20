@@ -2,6 +2,8 @@ import Logo from '../Logo/Logo';
 import { useNavigate } from 'react-router-dom'
 import {useForm} from 'react-hook-form'
 import { useState } from 'react';
+import {Link} from 'react-router-dom'
+
 
 const Login = () => {
   const navigate = useNavigate();

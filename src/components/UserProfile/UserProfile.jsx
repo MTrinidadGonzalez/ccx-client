@@ -1,6 +1,5 @@
 import UserService from '../../services/user.service'
 import  UserCard from '../UserCard/UserCard'
-
 import { useState, useEffect } from 'react'
 import  NavBarsContainer from '../NavBarsContainer/NavBarContainer'
 
