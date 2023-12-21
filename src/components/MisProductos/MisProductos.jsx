@@ -90,7 +90,9 @@ useEffect(() => {
         </div>
       ))
     ) : (
-      <h2>No hay productos de este usuario por el momento</h2>
+      <div className='not-user-products'>
+      <h2>No hay productos publicados por el momento</h2>
+    </div>
     )}
     </div>
     </div>
