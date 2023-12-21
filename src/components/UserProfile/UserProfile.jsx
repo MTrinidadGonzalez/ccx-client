@@ -9,7 +9,6 @@ const UserProfile = ({socket}) => {
         const getUser = async () => {
             const userService = new UserService()
             const response = await userService.getUserProfile()
-
                 const result = await response.data.payload
                 if (result) {
                     const userData = {
