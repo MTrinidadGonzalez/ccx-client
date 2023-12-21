@@ -16,10 +16,13 @@ const { user } = useContext(UserContext)
 
 
 useEffect(() => {
+  console.log('en mis productos user:', user)
+  if(user){
     const owner = user.email;
-    //console.log(owner);
+    console.log('en mis productos owner:',owner);
     const filteredProducts = products.filter((p) => p.owner.toLowerCase() === owner.toLowerCase());
     setUserProducts(filteredProducts);
+  }
   }, [user, products]);
 
   const handleDeleteProduct = async (pid) => {

@@ -11,17 +11,19 @@ body{
  font-size: larger;
  font-weight: bolder;
 color: rgb(13,16,117);
-
+color:rgb(211,235,20);
+background-color: rgb(0,30,43);
 }
 
 .btn-about-us{
   border: none;
   background-color: transparent;
   color: rgb(13,16,117);
-  border-bottom: 1px solid rgb(13,16,117);
   margin-top: 0;
   font-size: larger;
   font-weight: bolder;
+  color:rgb(211,235,20);
+  border-bottom: 1px solid rgb(211,235,20);
 }
 .error-message{
   color: red;
@@ -33,6 +35,7 @@ input{
   border-left: none;
   border-right: none;
   border-bottom: 1px solid rgb(13,16,117);
+  color:rgb(211,235,20);
 }
 
 .title{
@@ -67,7 +70,7 @@ input{
 }
 
 .presentacionContainer{
-  color: rgb(13,16,117);
+  color:rgb(211,235,20);
 }
 /*
 .bodyInicio{
@@ -98,8 +101,7 @@ input{
 }
 .presentacionContainer p{
   margin: 10px;
-  color: rgb(13,16,117);
-  /*color: white;*/
+  color:rgb(211,235,20);
 }
 .imgInicio{
   width: 100%;
@@ -236,6 +238,15 @@ ion-icon{
  color: rgb(16,117,197);
 }
 
+.container-body-register{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  width: 100%;
+}
+
 .forms{
   display: flex;
   flex-direction: column;
@@ -324,6 +335,7 @@ ion-icon{
   background-color: transparent ;
   border: 1px solid rgb(211,235,20 );
   color: rgb(13,16,117);
+  color:rgb(211,235,20);
 }
 .productsCard p{
   width: 100%;
@@ -353,12 +365,12 @@ ion-icon{
   line-height:1;
   overflow: hidden;
   border: 1px solid rgb(211,235,20 );
-  color: rgb(13,16,117);
+  color:rgb(211,235,20);
 }
+/*
 .cards:hover{
   color: black;
-
-}
+}*/
 .divImgCards{
   width: 200px;
   height: 200px;
@@ -423,6 +435,7 @@ ion-icon{
     border-radius: 3px;
     border: 1px solid rgb(211,235,20 );
     color: rgb(13,16,117);
+    color:rgb(211,235,20);
   }
   .slider-cards *{
     width: 90%;
@@ -532,6 +545,7 @@ ion-icon{
   width: 100%;
   border: 1px solid rgb(211,235,20 );
   color: rgb(13,16,117);
+  color:rgb(211,235,20);
   border-radius: 6px;
   padding: 10px;
 }
@@ -543,11 +557,13 @@ margin: auto;
   width: 95%;
   min-height: 30px;
   margin: auto;
+  color: rgb(13,16,117);
 }
 .cargando{
   border-radius: 50%;
   width: 100%;
   height: 100%;
+  color:rgb(211,235,20);
 }
 
 .opositOwnerChatContent{
@@ -582,8 +598,9 @@ padding: 5px;
 border-radius: 6px;
 position: relative;
 margin-bottom: 20px;
-border-bottom: 1px solid rgb(20,31,83);
-border-top: 1px solid  rgb(20,31,83);
+border-bottom: 1px solid rgb(211,235,20);
+border-top: 1px solid  rgb(211,235,20);
+color:rgb(211,235,20);
 }
 /***********delete and send message***/
 .btnDeleteMessage{ 
@@ -675,10 +692,9 @@ font-size: larger;
   align-items: flex-end;
   justify-content: flex-end;
   display: block;
-background-color: rgb(20,31,83);
-border-bottom: 1px solid rgb(211,235,20 );
-
-color: rgb(211,235,20 );
+  background-color: rgb(20,31,83);
+  border-bottom: 1px solid rgb(211,235,20 );
+  color: rgb(211,235,20 );
 }
 
 .containerBodyRegister{
@@ -776,6 +792,7 @@ color: rgb(211,235,20 );
     border-radius: 3px;
     border: 1px solid rgb(211,235,20 );
     color: rgb(13,16,117);
+    color:rgb(211,235,20);
   }
   .slider-cards *{
     width: 100%;

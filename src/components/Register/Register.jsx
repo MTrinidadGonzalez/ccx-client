@@ -33,7 +33,7 @@ const Register = () => {
 }
 
     return ( <>
-    <div  className='containerBodyRegister'> 
+    <div  className='container-body-register'> 
     <div className='divContainerForms'>
     <form onSubmit={handleSubmit(onSubmit)} className='forms'>
         <h2>Registrarme !</h2>

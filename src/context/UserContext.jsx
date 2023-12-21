@@ -15,7 +15,8 @@ export const UserProvider = ({ children,socket }) => {
       try {
         const response = await userService.getUserProfile();
         if(response.data.status=== 'success'){
-         console.log('get usecontext okk')
+         const user= response.data.payload
+         setUser(user)
         }
        
         if (response.data.status === 'error') {
@@ -25,7 +26,7 @@ export const UserProvider = ({ children,socket }) => {
         console.log( error);
       
       }
-      socket.on('getRealTimeUserProfile', (data) => {
+      /*socket.on('getRealTimeUserProfile', (data) => {
         
         if(data){
          setUser({ ...data })
@@ -34,12 +35,10 @@ export const UserProvider = ({ children,socket }) => {
          console.log('No realTime token,userContext')
         }
          
-       })
+       })*/
     };
 
     getUserProfile();
-
-   
 
   }, [navigate]);
 
