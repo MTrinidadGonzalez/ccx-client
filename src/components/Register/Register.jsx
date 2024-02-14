@@ -1,7 +1,7 @@
 import {useForm} from 'react-hook-form'
 import UserService from '../../services/user.service'
 import { useNavigate } from 'react-router-dom'
-
+import Swal from 'sweetalert2'
 const Register = () => {
     
    const {register,handleSubmit, reset}= useForm() 
@@ -20,9 +20,17 @@ const Register = () => {
     const response=await userService.createUser(user)
     const result=response.data
     if(result.status === 'success'){
-      
       reset()
-      navigate('/login')
+      Swal.fire({
+        icon: 'success', 
+        title: 'Nueva cuenta registrada!',
+        showConfirmButton: false, 
+        timer: 1000, 
+        background: 'white',
+        color: 'rgb(187,121,135)'
+         
+      });
+      navigate('/')
      
     }
    if(result.status === 'error'){
