@@ -10,20 +10,17 @@ body{
  line-height:2 ;
  font-size: larger;
  font-weight: bolder;
-color: rgb(13,16,117);
-color:rgb(211,235,20);
-background-color: rgb(0,30,43);
+ background-color: rgb(228,231,235);
+ color: black;
 }
 
 .btn-about-us{
   border: none;
   background-color: transparent;
-  color: rgb(13,16,117);
   margin-top: 0;
   font-size: larger;
   font-weight: bolder;
-  color:rgb(211,235,20);
-  border-bottom: 1px solid rgb(211,235,20);
+  border-bottom: 1px solid rgb(0,39,57);
 }
 .error-message{
   color: red;
@@ -51,19 +48,15 @@ input{
   width: 100%;
   height: 100%;
   font-weight: 900;
-  color: rgb(211,235,20);
-/*  margin-bottom: 0;*/
 }
-
+/*
 .title:hover{
  color:rgb(211,235,20);
-}
+}*/
 .titlePreInicio{
   font-size: xx-large;
   width: 100%;
   font-size: 55px;
-  color:rgb(211,235,20);
-
 }
 .titlePreInicioContainer{
   display: flex;
@@ -75,10 +68,10 @@ input{
   margin: auto;
   margin-top: 30px;
 }
-
+/*
 .presentacionContainer{
   color:rgb(211,235,20);
-}
+}*/
 /*
 .bodyInicio{
   background-color: rgb(55,139,101);
@@ -108,7 +101,6 @@ input{
 }
 .presentacionContainer p{
   margin: 10px;
-  color:rgb(211,235,20);
 }
 .imgInicio{
   width: 100%;
@@ -137,7 +129,7 @@ input{
   justify-content: center;
   align-items: center;
   width: 100%;
-  background-color: rgb(13,16,117);
+  background-color: rgb(0,39,57);
   }
 
 .itemsNavGral{
@@ -151,7 +143,7 @@ input{
   transition: 0.3s;
 }
 .itemsNavGral:hover{
-color:rgb(211,235,20);
+color:rgb(0,92,123);
 }
 
 /************generales***********/
@@ -166,7 +158,7 @@ color:rgb(211,235,20);
 }
 
 .btns-links:hover{
-  color:rgb(16,216,157);
+  color:rgb(0,92,123);
 }
 
 .btnConIcon{
@@ -201,12 +193,11 @@ ion-icon{
   transition: 0.5s;
   border-radius: 6px;
   color: white;
-  border: 1px solid rgb(211,235,20 );
-  background-color: rgb(16,216,157);
+  background-color: rgb(0,39,57);
 }
 
 .btns:hover{
- background-color: rgb(55,139,101);
+ background-color: rgb(0,92,123);
 }
 
 .containerSelects{
@@ -216,7 +207,6 @@ ion-icon{
   justify-content: center;
   align-items: center;
   margin-top: 30px;
-  border: 1px solid rgb(211,235,20 );
 }
 .sub-div-container-serlect{
   display: flex;
@@ -238,8 +228,6 @@ ion-icon{
   text-transform: uppercase;
   border-radius: 20px;
   width: 100%;
-  border: 1px solid rgb(211,235,20 );
-  color: rgb(13,16,117);
 }
 .selects:hover{
  color: rgb(16,117,197);
@@ -264,7 +252,7 @@ ion-icon{
   margin: 20px;
   width: 90%;
   border-radius: 9px;
-  border: 1px solid rgb(211,235,20 );
+  background-color: white;
  
 }
 
@@ -336,13 +324,9 @@ ion-icon{
   text-align: center;
   padding: 10px;
   margin: 10px;
- /* line-height:1;
-  overflow: hidden;*/
   border-radius: 6px;
   background-color: transparent ;
-  border: 1px solid rgb(211,235,20 );
-  color: rgb(13,16,117);
-  color:rgb(211,235,20);
+  background-color: white;
 }
 .productsCard p{
   width: 100%;
@@ -371,8 +355,7 @@ ion-icon{
   margin: 15px;
   line-height:1;
   overflow: hidden;
-  border: 1px solid rgb(211,235,20 );
-  color:rgb(211,235,20);
+  background-color: white;
 }
 /*
 .cards:hover{
@@ -440,9 +423,7 @@ ion-icon{
     margin: 10px;
     width: 100%;
     border-radius: 3px;
-    border: 1px solid rgb(211,235,20 );
-    color: rgb(13,16,117);
-    color:rgb(211,235,20);
+   background-color: white;
   }
   .slider-cards *{
     width: 90%;
@@ -473,7 +454,7 @@ ion-icon{
   color:rgb(20,31,83);
 }
 .btnGetUserChats:hover{
-  color:rgb(38,146,229);
+  color:rgb(0,163,176);
 }
 .chatsListContainer{
   display: flex;
@@ -485,26 +466,20 @@ ion-icon{
   top: 100%; 
   left: 0;
   z-index: 1; 
- /*background-color: black;
- color: white;*/
  background-color: white;
- /*color: black;*/
-
 }
 
 .userChatsList{
- /* display: block;*/
  display: flex;
  flex-direction: column;
  justify-content: center;
  align-items: center; 
- /*position: absolute;*/
  z-index: 1; 
  width: 100%;
  color: rgb(20,31,83);
 }
 .userChatsList:hover{
-  color: rgb(16,117,197);
+  color:rgb(0,163,176);
 }
 
 .linksChats{
@@ -516,7 +491,7 @@ ion-icon{
  width: 100%;
  transition: 0.3s;
  margin-left: 40px;
- color: rgb(20,31,83);
+ color: rgb(0,92,123);
 }
 .linksChatsImgContainer{
   width: 35px;
@@ -528,13 +503,8 @@ ion-icon{
 
 .linksChats img{
   width: 100%;
-/*  border-radius: 40%;*/
   margin-right: 2px;
 }
-/*
-.linksChats:hover{
-  border: none;
-}*/
 
 .displayNoneChat{
   display: none;
@@ -550,9 +520,7 @@ ion-icon{
   text-align: center;
   margin-top: 250px;
   width: 100%;
-  border: 1px solid rgb(211,235,20 );
-  color: rgb(13,16,117);
-  color:rgb(211,235,20);
+  border: 1px solid rgb(0,92,123 );
   border-radius: 6px;
   padding: 10px;
 }
@@ -570,7 +538,6 @@ margin: auto;
   border-radius: 50%;
   width: 100%;
   height: 100%;
-  color:rgb(211,235,20);
 }
 
 .opositOwnerChatContent{
@@ -579,7 +546,7 @@ flex-direction: row;
 align-items: center;
 justify-content: center;
 width: 100%;
-background-color: rgb(20,31,83);
+background-color: rgb(0,39,57);
 color: white;
 border-radius: 6px;
 }
@@ -605,9 +572,9 @@ padding: 5px;
 border-radius: 6px;
 position: relative;
 margin-bottom: 20px;
-border-bottom: 1px solid rgb(211,235,20);
-border-top: 1px solid  rgb(211,235,20);
-color:rgb(211,235,20);
+border-bottom: 1px solid rgb(0,39,57);
+border-top: 1px solid  rgb(0,39,57);
+
 }
 /***********delete and send message***/
 .btnDeleteMessage{ 
@@ -651,9 +618,10 @@ font-size: larger;
 
 
 @media screen and (max-width:900px) {
-/*  body,html{
-    background-color: rgb(55,139,101);
-  }*/
+  body,html{
+  width: 100%;
+  overflow-x: hidden;
+  }
   .constainersGenerale{
     margin-top: 180px;
   }
@@ -689,7 +657,7 @@ font-size: larger;
     width: 95%;
   }
   .itemsNavGral:hover{
-    color: rgb(211,235,20);
+    color: rgb(0,163,176);
   }
 
 .hamburguerMenuDiv{
@@ -699,9 +667,9 @@ font-size: larger;
   align-items: flex-end;
   justify-content: flex-end;
   display: block;
-  background-color: rgb(20,31,83);
-  border-bottom: 1px solid rgb(211,235,20 );
-  color: rgb(211,235,20 );
+  background-color: rgb(0,39,57);
+  border-bottom: 1px solid white;
+  color: white;
 }
 
 .containerBodyRegister{
@@ -717,8 +685,7 @@ font-size: larger;
   align-items: center;
   margin-top: 25px;
   width: 90%;
-  border: 1px solid rgb(211,235,20 );
-  color: rgb(13,16,117);
+  border: 1px solid rgb(0,92,123);
 }
 .sub-div-container-serlect{
   display: flex;
@@ -797,9 +764,7 @@ font-size: larger;
     cursor: pointer;
     scroll-snap-align: center;
     border-radius: 3px;
-    border: 1px solid rgb(211,235,20 );
-    color: rgb(13,16,117);
-    color:rgb(211,235,20);
+    background-color: white;
   }
   .slider-cards *{
     width: 100%;
