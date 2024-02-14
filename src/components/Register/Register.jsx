@@ -20,7 +20,6 @@ const Register = () => {
     const response=await userService.createUser(user)
     const result=response.data
     if(result.status === 'success'){
-      reset()
       Swal.fire({
         icon: 'success', 
         title: 'Nueva cuenta registrada!',
