@@ -19,6 +19,11 @@ const Register = () => {
     const userService= new UserService()
     const response=await userService.createUser(user)
     const result=response.data
+    if(result.status === 'error'){
+      if(result.error === 'Usuario ya registrado'){
+          alert('Correo ya registrado')
+      }
+     }
     if(result.status === 'success'){
       Swal.fire({
         icon: 'success', 
@@ -30,13 +35,7 @@ const Register = () => {
          
       });
       navigate('/')
-     
     }
-   if(result.status === 'error'){
-    if(result.error === 'Usuario ya registrado'){
-        alert('Correo ya registrado')
-    }
-   }
 }
 
     return ( <>
